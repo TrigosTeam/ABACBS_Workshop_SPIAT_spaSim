@@ -8,7 +8,7 @@ website:
     background: primary
     search: true
     left:
-      - href: ABACBS_workshop_SPIAT_spaSim.qmd
+      - href: index.qmd
         text: Home
       - Setup.qmd
       - Workshop_materials.qmd
