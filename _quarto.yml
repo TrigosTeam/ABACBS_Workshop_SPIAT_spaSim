@@ -1,14 +1,21 @@
 project:
-  title: "ABACBS_workshop_SPIAT_spaSim"
+  type: website
 
-editor: visual
 
 website:
+  title: "ABACBS workshop 2023 - SPIAT & spaSim"
   navbar:
     background: primary
     search: true
     left:
-      - text: "Home"
+      - text: Home
         file: index.qmd
       - Setup.qmd
       - Workshop_materials.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
