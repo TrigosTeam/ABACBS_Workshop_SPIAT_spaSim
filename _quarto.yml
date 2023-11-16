@@ -1,0 +1,14 @@
+project:
+  title: "ABACBS_workshop_SPIAT_spaSim"
+
+editor: visual
+
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - Setup.qmd
+      - Workshop_materials.qmd

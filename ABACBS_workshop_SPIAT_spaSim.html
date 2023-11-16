@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ABACBS_workshop_SPIAT_spaSim</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/quarto.js"></script>
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/popper.min.js"></script>
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ABACBS_workshop_SPIAT_spaSim_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="ABACBS_workshop_SPIAT_spaSim_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ABACBS_workshop_SPIAT_spaSim_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ABACBS_workshop_SPIAT_spaSim_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ABACBS_workshop_SPIAT_spaSim</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<p>In this workshop we will introduce two R packages we developed for the analysis and simulation of spatial proteomics data (multiplex immunohistochemistry, CODEX, MIBI, IMC, etc) published this year in Nature Communications (Feng et al.&nbsp;2023). SPIAT (SPatial Image Analysis of Tissues) is a spatial-platform agnostic toolkit with a suite of spatial analysis algorithms, and spaSim (spatial Simulator) is a novel simulator of tissue spatial patterns.</p>
+<p>The workshop is designed for those who would like to get started with or improve their capacity to perform spatial data analyses. We will cover how to handle spatial proteomics data, from reading, formatting, and extensive spatial analysis through SPIAT’s six analysis modules. These range from quality control and visualisation to more advanced topics such as cell colocalisation, spatial heterogeneity, tumour structure characterisation, and neighbourhood identification.</p>
+<p>During the workshop, you will get an overview of the analysis workflow and understand the rationale behind specific functions. You will get your hands dirty by designing an analysis workflow using a real example dataset, so you’ll learn by doing.</p>
+</section>
+<section id="time-and-location" class="level2">
+<h2 class="anchored" data-anchor-id="time-and-location">Time and Location</h2>
+<ul>
+<li>Friday 8 December 2023 09:00-12:30 AEST</li>
+<li><a href="https://tinyurl.com/uq46-371">Room 371, Andrew N. Liveris Building (46), University of Queensland St Lucia Campus, Brisbane</a></li>
+</ul>
+</section>
+<section id="register-here" class="level2">
+<h2 class="anchored" data-anchor-id="register-here">Register here</h2>
+<p><a href="https://www.eventbrite.com.au/e/spatial-analysis-with-spiat-and-spasim-tickets-744696897467">Register</a></p>
+</section>
+<section id="target-audience" class="level2">
+<h2 class="anchored" data-anchor-id="target-audience">Target audience</h2>
+<p>Researchers, scientists and/or bioinformaticians who are working on or are thinking of working on spatial proteomics data (e.g.&nbsp;OPAL, CODEX, MIBI, IMC) will find this workshop useful. The workshop will provide both a standardised way and a workflow to approach the analysis of a spatial dataset, as well as empower users who would like to incorporate SPIAT and spaSim into their spatial analyses.</p>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Basic programming skills in R (Familiarity with using R functions and installing R packages)</li>
+<li>Background knowledge in spatial proteomics</li>
+</ul>
+</section>
+<section id="set-up-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-requirements">Set up requirements</h2>
+<p>Please complete the <a href="Setup.html">Setup Instructions</a> before the course. If you have any trouble, please get in contact with us ASAP (yuzhou.feng@petermac.org).</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this workshop, you will master the SPIAT functions and design workflows for spatial proteomics data analysis and gain some insights into the ways of handling spatial proteomics data.</p>
+</section>
+<section id="workshop-organisers" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-organisers">Workshop organisers</h2>
+<ul>
+<li>Yuzhou Feng</li>
+</ul>
+<p>Laboratory Research (Peter MacCallum Cancer Centre) Yuzhou Feng is a Research Assistant in the Trigos Lab at Peter Mac. Yuzhou obtained her Master of Computational Biology degree from the University of Melbourne in 2021. Her main focus has been developing tools to analyse spatial proteomics datasets and to simulate cell locations in tissue microenvironments. She is the lead author and developer of the two packages SPIAT and spaSim.</p>
+<ul>
+<li>Dr Anna S. Trigos</li>
+</ul>
+<p>Group Leader Multi-omic Evolution and Ecosystems Laboratory Computational Biology Program Peter MacCallum Cancer Centre Dr Anna Trigos is a Group Leader in the Computational Biology Program at the Peter Mac. She leads the Multi-omic Evolution and Ecosystems lab focusing on understanding cancer evolution and ecosystems through the analysis of -omics data and the application of computational methods. Projects in the Trigos lab including profiling multi-omic evolution in cancer, understanding the role of cancer ecosystems in cancer progression and treatment resistance and developing methods for spatial analysis of cancer tissues and analysing complex patient -omics datasets.</p>
+<ul>
+<li>Sanduni Rajapaksa</li>
+</ul>
+<p>Informatics Consultant Research Computing Facility Peter MacCallum Cancer Centre Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently completed her PhD in Bioinformatics at the Laboratory of Computational Biology in the Department of Data Science and AI at Monash University. Continuing her research journey, Sanduni remains passionate about exploring the vast realm of proteins, sequencing and omics data.</p>
+</section>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Content</th>
+<th style="text-align: center;">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="Setup.html">Setup</a></td>
+<td style="text-align: center;">Prior to workshop</td>
+</tr>
+<tr class="even">
+<td>Session kick off</td>
+<td style="text-align: center;">9:00 - 9:10</td>
+</tr>
+<tr class="odd">
+<td>Introduction to SPIAT and spaSim</td>
+<td style="text-align: center;">9:10 - 9:20</td>
+</tr>
+<tr class="even">
+<td>Reading and formatting image</td>
+<td style="text-align: center;">9:20 - 9:45</td>
+</tr>
+<tr class="odd">
+<td>QC and basic analysis</td>
+<td style="text-align: center;">9:45 - 10:05</td>
+</tr>
+<tr class="even">
+<td>Cell colocalisation</td>
+<td style="text-align: center;">10:05 - 10:35</td>
+</tr>
+<tr class="odd">
+<td>break</td>
+<td style="text-align: center;">10:35 - 10:45</td>
+</tr>
+<tr class="even">
+<td>Spatial heterogeneity</td>
+<td style="text-align: center;">10:45 - 11:05</td>
+</tr>
+<tr class="odd">
+<td>Tumour structure characterisation</td>
+<td style="text-align: center;">11:05 - 11:30</td>
+</tr>
+<tr class="even">
+<td>Neighbourhood analysis</td>
+<td style="text-align: center;">11:30 - 11:45</td>
+</tr>
+<tr class="odd">
+<td>Overview of spaSim</td>
+<td style="text-align: center;">11:45 - 12:10</td>
+</tr>
+<tr class="even">
+<td>Q &amp; A</td>
+<td style="text-align: center;">12:10 - 12:30</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="additional-materials" class="level2">
+<h2 class="anchored" data-anchor-id="additional-materials">Additional materials</h2>
+<p>Please have a read of our recent <a href="10.1038/s41467-023-37822-0">paper</a> if you are interested!</p>
+<p>Links to the two packages:</p>
+<ul>
+<li><p><a href="https://github.com/TrigosTeam/SPIAT">SPIAT Github</a> and <a href="https://bioconductor.org/packages/release/bioc/html/SPIAT.html">SPIAT Bioconductor</a></p></li>
+<li><p><a href="https://github.com/TrigosTeam/spaSim">spaSim Github</a> and <a href="https://bioconductor.org/packages/release/bioc/html/spaSim.html">spaSim Bioconductor</a></p></li>
+</ul>
+<p>These two R packages were developed in the <a href="https://www.petermac.org/research/research-programs-and-labs/computational-biology-program/anna-trigos-lab">Anna Trigos Lab</a>.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

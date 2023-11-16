@@ -1,0 +1,80 @@
+---
+title: "ABACBS_workshop_SPIAT_spaSim"
+---
+
+## Welcome
+
+In this workshop we will introduce two R packages we developed for the analysis and simulation of spatial proteomics data (multiplex immunohistochemistry, CODEX, MIBI, IMC, etc) published this year in Nature Communications (Feng et al. 2023). SPIAT (SPatial Image Analysis of Tissues) is a spatial-platform agnostic toolkit with a suite of spatial analysis algorithms, and spaSim (spatial Simulator) is a novel simulator of tissue spatial patterns.
+
+The workshop is designed for those who would like to get started with or improve their capacity to perform spatial data analyses. We will cover how to handle spatial proteomics data, from reading, formatting, and extensive spatial analysis through SPIAT's six analysis modules. These range from quality control and visualisation to more advanced topics such as cell colocalisation, spatial heterogeneity, tumour structure characterisation, and neighbourhood identification.
+
+During the workshop, you will get an overview of the analysis workflow and understand the rationale behind specific functions. You will get your hands dirty by designing an analysis workflow using a real example dataset, so you'll learn by doing.
+
+## Time and Location
+
+-   Friday 8 December 2023 09:00-12:30 AEST
+-   [Room 371, Andrew N. Liveris Building (46), University of Queensland St Lucia Campus, Brisbane](https://tinyurl.com/uq46-371)
+
+## Register here
+
+[Register](https://www.eventbrite.com.au/e/spatial-analysis-with-spiat-and-spasim-tickets-744696897467)
+
+## Target audience
+
+Researchers, scientists and/or bioinformaticians who are working on or are thinking of working on spatial proteomics data (e.g. OPAL, CODEX, MIBI, IMC) will find this workshop useful. The workshop will provide both a standardised way and a workflow to approach the analysis of a spatial dataset, as well as empower users who would like to incorporate SPIAT and spaSim into their spatial analyses.
+
+## Prerequisites
+
+-   Basic programming skills in R (Familiarity with using R functions and installing R packages)
+-   Background knowledge in spatial proteomics
+
+## Set up requirements
+
+Please complete the [Setup Instructions](Setup.html) before the course. If you have any trouble, please get in contact with us ASAP (yuzhou.feng\@petermac.org).
+
+## Learning objectives
+
+By the end of this workshop, you will master the SPIAT functions and design workflows for spatial proteomics data analysis and gain some insights into the ways of handling spatial proteomics data.
+
+## Workshop organisers
+
+-   Yuzhou Feng
+
+Laboratory Research (Peter MacCallum Cancer Centre) Yuzhou Feng is a Research Assistant in the Trigos Lab at Peter Mac. Yuzhou obtained her Master of Computational Biology degree from the University of Melbourne in 2021. Her main focus has been developing tools to analyse spatial proteomics datasets and to simulate cell locations in tissue microenvironments. She is the lead author and developer of the two packages SPIAT and spaSim.
+
+-   Dr Anna S. Trigos
+
+Group Leader Multi-omic Evolution and Ecosystems Laboratory Computational Biology Program Peter MacCallum Cancer Centre Dr Anna Trigos is a Group Leader in the Computational Biology Program at the Peter Mac. She leads the Multi-omic Evolution and Ecosystems lab focusing on understanding cancer evolution and ecosystems through the analysis of -omics data and the application of computational methods. Projects in the Trigos lab including profiling multi-omic evolution in cancer, understanding the role of cancer ecosystems in cancer progression and treatment resistance and developing methods for spatial analysis of cancer tissues and analysing complex patient -omics datasets.
+
+-   Sanduni Rajapaksa
+
+Informatics Consultant Research Computing Facility Peter MacCallum Cancer Centre Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently completed her PhD in Bioinformatics at the Laboratory of Computational Biology in the Department of Data Science and AI at Monash University. Continuing her research journey, Sanduni remains passionate about exploring the vast realm of proteins, sequencing and omics data.
+
+## Schedule
+
+| Content                           |       Time        |
+|-----------------------------------|:-----------------:|
+| [Setup](Setup.html)               | Prior to workshop |
+| Session kick off                  |    9:00 - 9:10    |
+| Introduction to SPIAT and spaSim  |    9:10 - 9:20    |
+| Reading and formatting image      |    9:20 - 9:45    |
+| QC and basic analysis             |   9:45 - 10:05    |
+| Cell colocalisation               |   10:05 - 10:35   |
+| break                             |   10:35 - 10:45   |
+| Spatial heterogeneity             |   10:45 - 11:05   |
+| Tumour structure characterisation |   11:05 - 11:30   |
+| Neighbourhood analysis            |   11:30 - 11:45   |
+| Overview of spaSim                |   11:45 - 12:10   |
+| Q & A                             |   12:10 - 12:30   |
+
+## Additional materials
+
+Please have a read of our recent [paper](10.1038/s41467-023-37822-0) if you are interested!
+
+Links to the two packages:
+
+-   [SPIAT Github](https://github.com/TrigosTeam/SPIAT) and [SPIAT Bioconductor](https://bioconductor.org/packages/release/bioc/html/SPIAT.html)
+
+-   [spaSim Github](https://github.com/TrigosTeam/spaSim) and [spaSim Bioconductor](https://bioconductor.org/packages/release/bioc/html/spaSim.html)
+
+These two R packages were developed in the [Anna Trigos Lab](https://www.petermac.org/research/research-programs-and-labs/computational-biology-program/anna-trigos-lab).
