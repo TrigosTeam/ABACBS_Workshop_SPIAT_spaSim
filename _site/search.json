@@ -1,89 +1,5 @@
 [
   {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "",
-    "text": "In this workshop we will introduce two R packages we developed for the analysis and simulation of spatial proteomics data (multiplex immunohistochemistry, CODEX, MIBI, IMC, etc) published this year in Nature Communications (Feng et al. 2023). SPIAT (SPatial Image Analysis of Tissues) is a spatial-platform agnostic toolkit with a suite of spatial analysis algorithms, and spaSim (spatial Simulator) is a novel simulator of tissue spatial patterns.\nThe workshop is designed for those who would like to get started with or improve their capacity to perform spatial data analyses. We will cover how to handle spatial proteomics data, from reading, formatting, and extensive spatial analysis through SPIAT’s six analysis modules. These range from quality control and visualisation to more advanced topics such as cell colocalisation, spatial heterogeneity, tumour structure characterisation, and neighbourhood identification.\nDuring the workshop, you will get an overview of the analysis workflow and understand the rationale behind specific functions. You will get your hands dirty by designing an analysis workflow using a real example dataset, so you’ll learn by doing."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#welcome",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#welcome",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "",
-    "text": "In this workshop we will introduce two R packages we developed for the analysis and simulation of spatial proteomics data (multiplex immunohistochemistry, CODEX, MIBI, IMC, etc) published this year in Nature Communications (Feng et al. 2023). SPIAT (SPatial Image Analysis of Tissues) is a spatial-platform agnostic toolkit with a suite of spatial analysis algorithms, and spaSim (spatial Simulator) is a novel simulator of tissue spatial patterns.\nThe workshop is designed for those who would like to get started with or improve their capacity to perform spatial data analyses. We will cover how to handle spatial proteomics data, from reading, formatting, and extensive spatial analysis through SPIAT’s six analysis modules. These range from quality control and visualisation to more advanced topics such as cell colocalisation, spatial heterogeneity, tumour structure characterisation, and neighbourhood identification.\nDuring the workshop, you will get an overview of the analysis workflow and understand the rationale behind specific functions. You will get your hands dirty by designing an analysis workflow using a real example dataset, so you’ll learn by doing."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#time-and-location",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#time-and-location",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Time and Location",
-    "text": "Time and Location\n\nFriday 8 December 2023 09:00-12:30 AEST\nRoom 371, Andrew N. Liveris Building (46), University of Queensland St Lucia Campus, Brisbane"
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#register-here",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#register-here",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Register here",
-    "text": "Register here\nRegister"
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#target-audience",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#target-audience",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Target audience",
-    "text": "Target audience\nResearchers, scientists and/or bioinformaticians who are working on or are thinking of working on spatial proteomics data (e.g. OPAL, CODEX, MIBI, IMC) will find this workshop useful. The workshop will provide both a standardised way and a workflow to approach the analysis of a spatial dataset, as well as empower users who would like to incorporate SPIAT and spaSim into their spatial analyses."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#prerequisites",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#prerequisites",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nBasic programming skills in R (Familiarity with using R functions and installing R packages)\nBackground knowledge in spatial proteomics"
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#set-up-requirements",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#set-up-requirements",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Set up requirements",
-    "text": "Set up requirements\nPlease complete the Setup Instructions before the course. If you have any trouble, please get in contact with us ASAP (yuzhou.feng@petermac.org)."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#learning-objectives",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#learning-objectives",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, you will master the SPIAT functions and design workflows for spatial proteomics data analysis and gain some insights into the ways of handling spatial proteomics data."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#workshop-organisers",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#workshop-organisers",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Workshop organisers",
-    "text": "Workshop organisers\n\nYuzhou Feng\n\nLaboratory Research (Peter MacCallum Cancer Centre) Yuzhou Feng is a Research Assistant in the Trigos Lab at Peter Mac. Yuzhou obtained her Master of Computational Biology degree from the University of Melbourne in 2021. Her main focus has been developing tools to analyse spatial proteomics datasets and to simulate cell locations in tissue microenvironments. She is the lead author and developer of the two packages SPIAT and spaSim.\n\nDr Anna S. Trigos\n\nGroup Leader Multi-omic Evolution and Ecosystems Laboratory Computational Biology Program Peter MacCallum Cancer Centre Dr Anna Trigos is a Group Leader in the Computational Biology Program at the Peter Mac. She leads the Multi-omic Evolution and Ecosystems lab focusing on understanding cancer evolution and ecosystems through the analysis of -omics data and the application of computational methods. Projects in the Trigos lab including profiling multi-omic evolution in cancer, understanding the role of cancer ecosystems in cancer progression and treatment resistance and developing methods for spatial analysis of cancer tissues and analysing complex patient -omics datasets.\n\nSanduni Rajapaksa\n\nInformatics Consultant Research Computing Facility Peter MacCallum Cancer Centre Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently completed her PhD in Bioinformatics at the Laboratory of Computational Biology in the Department of Data Science and AI at Monash University. Continuing her research journey, Sanduni remains passionate about exploring the vast realm of proteins, sequencing and omics data."
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#schedule",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#schedule",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\nContent\nTime\n\n\n\n\nSetup\nPrior to workshop\n\n\nSession kick off\n9:00 - 9:10\n\n\nIntroduction to SPIAT and spaSim\n9:10 - 9:20\n\n\nReading and formatting image\n9:20 - 9:45\n\n\nQC and basic analysis\n9:45 - 10:05\n\n\nCell colocalisation\n10:05 - 10:35\n\n\nbreak\n10:35 - 10:45\n\n\nSpatial heterogeneity\n10:45 - 11:05\n\n\nTumour structure characterisation\n11:05 - 11:30\n\n\nNeighbourhood analysis\n11:30 - 11:45\n\n\nOverview of spaSim\n11:45 - 12:10\n\n\nQ & A\n12:10 - 12:30"
-  },
-  {
-    "objectID": "ABACBS_workshop_SPIAT_spaSim.html#additional-materials",
-    "href": "ABACBS_workshop_SPIAT_spaSim.html#additional-materials",
-    "title": "ABACBS_workshop_SPIAT_spaSim",
-    "section": "Additional materials",
-    "text": "Additional materials\nPlease have a read of our recent paper if you are interested!\nLinks to the two packages:\n\nSPIAT Github and SPIAT Bioconductor\nspaSim Github and spaSim Bioconductor\n\nThese two R packages were developed in the Anna Trigos Lab."
-  },
-  {
-    "objectID": "Setup.html",
-    "href": "Setup.html",
-    "title": "Setup",
-    "section": "",
-    "text": "It is essential you have R and RStudio installed, and BYO laptop for the course.\nInstall R (&gt;= 4.3.0)\nInstall RStudio\nPlease make sure all packages are installed prior to the workshop.\nInstall/update BiocManager to version 3.18.\n\ninstall.packages(\"BiocManager\") \nBiocManager::install(version = \"3.18\") \n\nThen install the packages.\n\nBiocManager::install(\"SPIAT\") \nBiocManager::install(\"spaSim\") \n\nAnd these packages:\n\ninstall.packages(c(\"elsa\", \"Rtsne\", \"umap\", \"alphahull\", \"plotly\", \"survminer\", \n                   \"survival\", \"vroom\", \"rmarkdown\", \"knitr\"))\nBiocManager::install(\"ComplexHeatmap\")\n\nIf asked to update all/some/none packages, please answer with a.\nIf asked to install the compilation packages, please answer with Yes.\nNote: If you don’t want to change your current library, it’s better to create a new R project and use the package renv (https://rstudio.github.io/renv/articles/renv.html) to install the packages for this workshop.\nPlease email yuzhou.feng@petermac.org if you have any issue installing the packages."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ABACBS_workshop_SPIAT_spaSim",
@@ -159,5 +75,12 @@
     "title": "ABACBS_workshop_SPIAT_spaSim",
     "section": "Additional materials",
     "text": "Additional materials\nPlease have a read of our recent paper if you are interested!\nLinks to the two packages:\n\nSPIAT Github and SPIAT Bioconductor\nspaSim Github and spaSim Bioconductor\n\nThese two R packages were developed in the Anna Trigos Lab."
+  },
+  {
+    "objectID": "Setup.html",
+    "href": "Setup.html",
+    "title": "Setup",
+    "section": "",
+    "text": "It is essential you have R and RStudio installed, and BYO laptop for the course.\nInstall R (&gt;= 4.3.0)\nInstall RStudio\nPlease make sure all packages are installed prior to the workshop.\nInstall/update BiocManager to version 3.18.\n\ninstall.packages(\"BiocManager\") \nBiocManager::install(version = \"3.18\") \n\nThen install the packages.\n\nBiocManager::install(\"SPIAT\") \nBiocManager::install(\"spaSim\") \n\nAnd these packages:\n\ninstall.packages(c(\"elsa\", \"Rtsne\", \"umap\", \"alphahull\", \"plotly\", \"survminer\", \n                   \"survival\", \"vroom\", \"rmarkdown\", \"knitr\"))\nBiocManager::install(\"ComplexHeatmap\")\n\nIf asked to update all/some/none packages, please answer with a.\nIf asked to install the compilation packages, please answer with Yes.\nNote: If you don’t want to change your current library, it’s better to create a new R project and use the package renv (https://rstudio.github.io/renv/articles/renv.html) to install the packages for this workshop.\nPlease email yuzhou.feng@petermac.org if you have any issue installing the packages."
   }
 ]

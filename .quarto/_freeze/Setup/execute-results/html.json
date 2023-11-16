@@ -2,7 +2,9 @@
   "hash": "4e893611ce31f322c78ebc3fffb82948",
   "result": {
     "markdown": "---\ntitle: \"Setup\"\n---\n\n\nIt is essential you have R and RStudio installed, and BYO laptop for the course.\n\n[Install R (\\>= 4.3.0)](https://cran.ms.unimelb.edu.au/)\n\n[Install RStudio](https://rstudio.com/products/rstudio/download/)\n\nPlease make sure all packages are installed prior to the workshop.\n\nInstall/update BiocManager to version 3.18.\n\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages(\"BiocManager\") \nBiocManager::install(version = \"3.18\") \n```\n:::\n\n\nThen install the packages.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nBiocManager::install(\"SPIAT\") \nBiocManager::install(\"spaSim\") \n```\n:::\n\n\nAnd these packages:\n\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages(c(\"elsa\", \"Rtsne\", \"umap\", \"alphahull\", \"plotly\", \"survminer\", \n                   \"survival\", \"vroom\", \"rmarkdown\", \"knitr\"))\nBiocManager::install(\"ComplexHeatmap\")\n```\n:::\n\n\nIf asked to update all/some/none packages, please answer with a.\n\nIf asked to install the compilation packages, please answer with Yes.\n\n**Note**: If you don't want to change your current library, it's better to create a new R project and use the package `renv` (https://rstudio.github.io/renv/articles/renv.html) to install the packages for this workshop.\n\nPlease email yuzhou.feng\\@petermac.org if you have any issue installing the packages.\n",
-    "supporting": [],
+    "supporting": [
+      "Setup_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
