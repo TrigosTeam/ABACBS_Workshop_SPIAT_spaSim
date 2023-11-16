@@ -10,5 +10,11 @@
   },
   "index.qmd": {
     "index.html": "95087fe7"
+  },
+  "docs/Workshop_materials.qmd": {
+    "Workshop_materials.html": "95f0f130"
+  },
+  "docs/Setup.qmd": {
+    "Setup.html": "9d77b064"
   }
 }

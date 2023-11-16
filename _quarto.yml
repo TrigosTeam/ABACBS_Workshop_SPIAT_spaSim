@@ -10,8 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - Setup.qmd
-      - Workshop_materials.qmd
+      - docs/Setup.qmd
+      - docs/Workshop_materials.qmd
 
 
 format:
