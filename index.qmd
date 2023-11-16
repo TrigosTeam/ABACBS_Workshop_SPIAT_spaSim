@@ -1,5 +1,5 @@
 ---
-title: "ABACBS_workshop_SPIAT_spaSim"
+title: "Overview of the workshop"
 ---
 
 ## Welcome

@@ -5,16 +5,17 @@ project:
 website:
   title: "ABACBS workshop 2023 - SPIAT & spaSim"
   navbar:
-    background: primary
-    search: true
     left:
       - href: index.qmd
         text: Home
-      - docs/Setup.qmd
-      - docs/Workshop_materials.qmd
+      - href: docs/Setup.qmd
+        text: Setup
+      - href: docs/Workshop_materials.qmd
+        text: Workshop materials
 
 
 format:
   html:
     theme: cosmo
+    css: style.css
     toc: true
