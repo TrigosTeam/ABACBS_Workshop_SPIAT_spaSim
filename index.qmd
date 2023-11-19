@@ -30,7 +30,7 @@ Researchers, scientists and/or bioinformaticians who are working on or are think
 
 ## Set up requirements
 
-Please complete the [Setup Instructions](Setup.html) before the course. If you have any trouble, please get in contact with us ASAP (yuzhou.feng\@petermac.org).
+Please complete the [Setup Instructions](docs/Setup.qmd) before the course. If you have any trouble, please get in contact with us ASAP (yuzhou.feng\@petermac.org).
 
 ## Learning objectives
 
@@ -40,21 +40,27 @@ By the end of this workshop, you will master the SPIAT functions and design work
 
 -   Yuzhou Feng
 
-Laboratory Research (Peter MacCallum Cancer Centre) Yuzhou Feng is a Research Assistant in the Trigos Lab at Peter Mac. Yuzhou obtained her Master of Computational Biology degree from the University of Melbourne in 2021. Her main focus has been developing tools to analyse spatial proteomics datasets and to simulate cell locations in tissue microenvironments. She is the lead author and developer of the two packages SPIAT and spaSim.
+Laboratory Research | Trigos Lab | Peter MacCallum Cancer Centre 
+
+Yuzhou Feng is a Research Assistant in the Trigos Lab at Peter Mac. Yuzhou obtained her Master of Computational Biology degree from the University of Melbourne in 2021. Her main focus has been developing tools to analyse spatial proteomics datasets and to simulate cell locations in tissue microenvironments. She is the lead author and developer of the two packages SPIAT and spaSim.
 
 -   Dr Anna S. Trigos
 
-Group Leader Multi-omic Evolution and Ecosystems Laboratory Computational Biology Program Peter MacCallum Cancer Centre Dr Anna Trigos is a Group Leader in the Computational Biology Program at the Peter Mac. She leads the Multi-omic Evolution and Ecosystems lab focusing on understanding cancer evolution and ecosystems through the analysis of -omics data and the application of computational methods. Projects in the Trigos lab including profiling multi-omic evolution in cancer, understanding the role of cancer ecosystems in cancer progression and treatment resistance and developing methods for spatial analysis of cancer tissues and analysing complex patient -omics datasets.
+Group Leader | Multi-omic Evolution and Ecosystems Laboratory | Computational Biology Program | Peter MacCallum Cancer Centre 
+
+Dr Anna Trigos is a Group Leader in the Computational Biology Program at the Peter Mac. She leads the Multi-omic Evolution and Ecosystems lab focusing on understanding cancer evolution and ecosystems through the analysis of -omics data and the application of computational methods. Projects in the Trigos lab including profiling multi-omic evolution in cancer, understanding the role of cancer ecosystems in cancer progression and treatment resistance and developing methods for spatial analysis of cancer tissues and analysing complex patient -omics datasets.
 
 -   Sanduni Rajapaksa
 
-Informatics Consultant Research Computing Facility Peter MacCallum Cancer Centre Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently completed her PhD in Bioinformatics at the Laboratory of Computational Biology in the Department of Data Science and AI at Monash University. Continuing her research journey, Sanduni remains passionate about exploring the vast realm of proteins, sequencing and omics data.
+Informatics Consultant | Research Computing Facility | Peter MacCallum Cancer Centre 
+
+Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently completed her PhD in Bioinformatics at the Laboratory of Computational Biology in the Department of Data Science and AI at Monash University. Continuing her research journey, Sanduni remains passionate about exploring the vast realm of proteins, sequencing and omics data.
 
 ## Schedule
 
 | Content                           |       Time        |
 |-----------------------------------|:-----------------:|
-| [Setup](Setup.html)               | Prior to workshop |
+| [Setup](docs/Setup.qmd)               | Prior to workshop |
 | Session kick off                  |    9:00 - 9:10    |
 | Introduction to SPIAT and spaSim  |    9:10 - 9:20    |
 | Reading and formatting image      |    9:20 - 9:45    |
@@ -69,7 +75,7 @@ Informatics Consultant Research Computing Facility Peter MacCallum Cancer Centre
 
 ## Additional materials
 
-Please have a read of our recent [paper](10.1038/s41467-023-37822-0) if you are interested!
+Please have a read of our recent [paper](https://www.nature.com/articles/s41467-023-37822-0) if you are interested!
 
 Links to the two packages:
 
