@@ -10,6 +10,18 @@ The workshop is designed for those who would like to get started with or improve
 
 During the workshop, you will get an overview of the analysis workflow and understand the rationale behind specific functions. You will get your hands dirty by designing an analysis workflow using a real example dataset, so you'll learn by doing.
 
+Please have a read of our recent paper (Nature Communications) if you are interested!
+[https://www.nature.com/articles/s41467-023-37822-0](https://www.nature.com/articles/s41467-023-37822-0)
+
+Links to the two packages:
+
+-   [SPIAT Github](https://github.com/TrigosTeam/SPIAT) and [SPIAT Bioconductor](https://bioconductor.org/packages/release/bioc/html/SPIAT.html)
+
+-   [spaSim Github](https://github.com/TrigosTeam/spaSim) and [spaSim Bioconductor](https://bioconductor.org/packages/release/bioc/html/spaSim.html)
+
+These two R packages were developed in the [Anna Trigos Lab](https://www.petermac.org/research/research-programs-and-labs/computational-biology-program/anna-trigos-lab).
+
+
 ## Time and Location
 
 -   Friday 8 December 2023 09:00-12:30 AEST
@@ -73,14 +85,4 @@ Sanduni Rajapaksa is an Informatics Consultant at Peter Mac. She recently comple
 | Overview of spaSim                |   11:45 - 12:10   |
 | Q & A                             |   12:10 - 12:30   |
 
-## Additional materials
 
-Please have a read of our recent [paper](https://www.nature.com/articles/s41467-023-37822-0) if you are interested!
-
-Links to the two packages:
-
--   [SPIAT Github](https://github.com/TrigosTeam/SPIAT) and [SPIAT Bioconductor](https://bioconductor.org/packages/release/bioc/html/SPIAT.html)
-
--   [spaSim Github](https://github.com/TrigosTeam/spaSim) and [spaSim Bioconductor](https://bioconductor.org/packages/release/bioc/html/spaSim.html)
-
-These two R packages were developed in the [Anna Trigos Lab](https://www.petermac.org/research/research-programs-and-labs/computational-biology-program/anna-trigos-lab).
