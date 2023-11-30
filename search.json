@@ -11,7 +11,7 @@
     "href": "docs/Workshop_materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Please download the following files (worksheet, data and objects) prior to the workshop.\nWorksheet\ncellData_with-centroids\nFormatted_clinical_data\nTNBC_formatted_spe_objects\n\n\nThe complete worksheet with solutions and its knitted html are here:\nWorksheet Solution\nWorksheet solution html"
+    "text": "Please download the following files (worksheet, data and objects) prior to the workshop.\nWorksheet\ncellData_TNBC\nFormatted_clinical_data_TNBC \nformatted_spe_objects_TNBC\n\n\nThe complete worksheet with solutions and its knitted html are here:\nWorksheet Solution\nSPIAT_worksheet_solutions.html"
   },
   {
     "objectID": "index.html",
