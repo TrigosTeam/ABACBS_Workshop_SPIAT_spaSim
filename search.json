@@ -4,7 +4,14 @@
     "href": "docs/Setup.html",
     "title": "Setup",
     "section": "",
-    "text": "It is essential you have R and RStudio installed, and BYO laptop for the course.\nInstall R (&gt;= 4.3.0)\nInstall RStudio\nPlease make sure all packages are installed prior to the workshop.\nInstall/update BiocManager to version 3.18.\n\ninstall.packages(\"BiocManager\") \nBiocManager::install(version = \"3.18\") \n\nThen install the packages.\n\nBiocManager::install(\"SPIAT\") \nBiocManager::install(\"spaSim\") \n\nAnd these packages:\n\ninstall.packages(c(\"elsa\", \"Rtsne\", \"umap\", \"alphahull\", \"plotly\", \"survminer\", \n                   \"survival\", \"vroom\", \"rmarkdown\", \"knitr\"))\nBiocManager::install(\"ComplexHeatmap\")\n\nIf asked to update all/some/none packages, please answer with a.\nIf asked to install the compilation packages, please answer with Yes.\nNote: If you don’t want to change your current library, it’s better to create a new R project and use the package renv (https://rstudio.github.io/renv/articles/renv.html) to install the packages for this workshop.\nPlease email yuzhou.feng@petermac.org if you have any issue installing the packages."
+    "text": "Please follow the instructions in Workshop Materials to download the files.\nIt is essential you have R and RStudio installed, and please bring your own laptop for the workshop.\nInstall R (&gt;= 4.3.0)\nInstall RStudio\nPlease make sure all packages are installed prior to the workshop.\nInstall/update BiocManager to version 3.18.\n\ninstall.packages(\"BiocManager\") \nBiocManager::install(version = \"3.18\") \n\nThen install the packages.\n\nBiocManager::install(\"SPIAT\") \nBiocManager::install(\"spaSim\") \n\nAnd these packages:\n\ninstall.packages(c(\"elsa\", \"Rtsne\", \"umap\", \"alphahull\", \"plotly\", \"survminer\", \n                   \"survival\", \"vroom\", \"rmarkdown\", \"knitr\"))\nBiocManager::install(\"ComplexHeatmap\")\n\nIf asked to update all/some/none packages, please answer with a.\nIf asked to install the compilation packages, please answer with Yes.\nNote: If you don’t want to change your current library, it’s better to create a new R project and use the package renv (https://rstudio.github.io/renv/articles/renv.html) to install the packages for this workshop.\nPlease email yuzhou.feng@petermac.org if you have any issue installing the packages."
+  },
+  {
+    "objectID": "docs/Workshop_materials.html",
+    "href": "docs/Workshop_materials.html",
+    "title": "Workshop Materials",
+    "section": "",
+    "text": "Please download the following files (worksheet, data and objects) prior to the workshop.\nWorksheet\ncellData_with-centroids\nFormatted_clinical_data\nTNBC_formatted_spe_objects\n\n\nThe complete worksheet with solutions and its knitted html are here:\nWorksheet Solution\nWorksheet solution html"
   },
   {
     "objectID": "index.html",
