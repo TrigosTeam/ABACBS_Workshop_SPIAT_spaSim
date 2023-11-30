@@ -2,4 +2,13 @@
 title: "Workshop Materials"
 ---
 
-## Workshop Materials will be updated soon!
+Please download the following files (worksheet, data and objects) prior to the workshop.
+
+[Worksheet](worksheets/SPIAT_worksheet.Rmd)
+[cellData_with-centroids](worksheets/cellData_with-centroids.csv)
+[Formatted_clinical_data](worksheets/Formatted_clinical_data.csv)
+[TNBC_formatted_spe_objects](worksheets/MIBI_spe.Rda)
+
+The complete worksheet with solutions and its knitted html are here:
+[Worksheet Solution](worksheets/SPIAT_worksheet_solutions.Rmd)
+[Worksheet solution html](worksheets/SPIAT_worksheet_solutions.html)

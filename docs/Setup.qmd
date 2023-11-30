@@ -1,8 +1,9 @@
 ---
 title: "Setup"
 ---
+Please follow the instructions in [Workshop Materials](Workshop_materials.qmd) to download the files.
 
-It is essential you have R and RStudio installed, and BYO laptop for the course.
+It is essential you have R and RStudio installed, and please bring your own laptop for the workshop.
 
 [Install R (\>= 4.3.0)](https://cran.ms.unimelb.edu.au/)
 
